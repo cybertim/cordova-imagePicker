@@ -23,9 +23,10 @@
 	self.quality = [[options objectForKey:@"quality"] integerValue];
 
 	ELCImagePickerController *imagePicker = [[ELCImagePickerController alloc] initImagePicker];
-   imagePicker.maximumImagesCount = maximumImagesCount;
-   imagePicker.returnsOriginalImage = 1;
-   imagePicker.imagePickerDelegate = self;
+    imagePicker.maximumImagesCount = maximumImagesCount;
+    imagePicker.returnsOriginalImage = YES;
+    imagePicker.returnsImage = YES;
+    imagePicker.imagePickerDelegate = self;
 
 	self.callbackId = command.callbackId;
 	// Present modally
