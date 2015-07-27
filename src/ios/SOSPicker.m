@@ -7,7 +7,13 @@
 //
 
 #import "SOSPicker.h"
-#import "ELCImagePickerHeader.h"
+#import "ELCImagePickerController.h"
+#import "ELCAsset.h"
+#import "ELCAssetCell.h"
+#import "ELCAssetTablePicker.h"
+#import "ELCAlbumPickerController.h"
+#import "ELCConsole.h"
+
 #define CDV_PHOTO_PREFIX @"cdv_photo_"
 
 @implementation SOSPicker
