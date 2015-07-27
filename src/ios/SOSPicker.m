@@ -25,7 +25,7 @@
 	ELCImagePickerController *imagePicker = [[ELCImagePickerController alloc] initImagePicker];
     imagePicker.maximumImagesCount = maximumImagesCount;
     imagePicker.returnsOriginalImage = YES;
-    imagePicker.returnsImage = YES;
+    imagePicker.returnsImage = NO;
     imagePicker.imagePickerDelegate = self;
 
 	self.callbackId = command.callbackId;
