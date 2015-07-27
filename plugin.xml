@@ -49,9 +49,6 @@
     <header-file src="src/ios/ELCImagePicker/ELCOverlayImageView.h" />
     <source-file src="src/ios/ELCImagePicker/ELCOverlayImageView.m" />
 
-    <header-file src="src/ios/ELCImagePicker/ELCOverlayImageView.h" />
-    <source-file src="src/ios/ELCImagePicker/ELCOverlayImageView.m" />
-
     <header-file src="src/ios/ELCImagePicker/ELCConsole.h" />
     <source-file src="src/ios/ELCImagePicker/ELCConsole.m" />
 
