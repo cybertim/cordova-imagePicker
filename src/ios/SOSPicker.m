@@ -7,12 +7,6 @@
 //
 
 #import "SOSPicker.h"
-#import "ELCImagePickerController.h"
-#import "ELCAsset.h"
-#import "ELCAssetCell.h"
-#import "ELCAssetTablePicker.h"
-#import "ELCAlbumPickerController.h"
-#import "ELCConsole.h"
 
 #define CDV_PHOTO_PREFIX @"cdv_photo_"
 
@@ -28,23 +22,11 @@
 	self.height = [[options objectForKey:@"height"] integerValue];
 	self.quality = [[options objectForKey:@"quality"] integerValue];
 
-	// Create the an album controller and image picker
-	ELCAlbumPickerController *albumController = [[ELCAlbumPickerController alloc] init];
-
-	if (maximumImagesCount == 1) {
-      albumController.immediateReturn = true;
-      albumController.singleSelection = true;
-   } else {
-      albumController.immediateReturn = false;
-      albumController.singleSelection = false;
-   }
-
-   ELCImagePickerController *imagePicker = [[ELCImagePickerController alloc] initWithRootViewController:albumController];
+	ELCImagePickerController *imagePicker = [[ELCImagePickerController alloc] initImagePicker];
    imagePicker.maximumImagesCount = maximumImagesCount;
    imagePicker.returnsOriginalImage = 1;
    imagePicker.imagePickerDelegate = self;
 
-   albumController.parent = imagePicker;
 	self.callbackId = command.callbackId;
 	// Present modally
 	[self.viewController presentViewController:imagePicker

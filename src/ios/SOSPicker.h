@@ -7,13 +7,7 @@
 //
 
 #import <Cordova/CDVPlugin.h>
-#import "ELCImagePickerController.h"
-#import "ELCAsset.h"
-#import "ELCAssetCell.h"
-#import "ELCAssetTablePicker.h"
-#import "ELCAlbumPickerController.h"
-#import "ELCConsole.h"
-
+#import "ELCImagePickerHeader.h"
 
 @interface SOSPicker : CDVPlugin <ELCImagePickerControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate>
 
