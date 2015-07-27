@@ -52,8 +52,10 @@
     <header-file src="src/ios/ELCImagePicker/ELCConsole.h" />
     <source-file src="src/ios/ELCImagePicker/ELCConsole.m" />
 
-    <header-file src="src/ios/ELCImagePicker/ELCImagePickerHeader.h" />
+    <header-file src="src/ios/ELCImagePicker/ELCImagePickerController.h" />
     <source-file src="src/ios/ELCImagePicker/ELCImagePickerController.m" />
+
+    <header-file src="src/ios/ELCImagePicker/ELCImagePickerHeader.h" />
 
 		<resource-file src="src/ios/ELCImagePicker/Resources/ELCAlbumPickerController.xib" />
 		<resource-file src="src/ios/ELCImagePicker/Resources/ELCAssetPicker.xib" />
